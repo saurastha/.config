@@ -1,3 +1,7 @@
+vim.cmd([[set mouse=]])
+vim.cmd([[set noswapfile]])
+vim.cmd([[hi @lsp.type.number gui=italic]])
+
 vim.opt.number = true
 vim.opt.relativenumber = true
 

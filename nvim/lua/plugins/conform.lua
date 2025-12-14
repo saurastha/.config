@@ -3,7 +3,8 @@ return {
 	opts = {
 		formatters_by_ft = {
 			lua = { "stylua" },
-			python = { "ruff_format" },
+			python = { "ruff_fix", "ruff_format" },
+			terraform = { "terraform_fmt" },
 			yaml = { "prettierd", "prettier", stop_after_first = true },
 			json = { "prettierd", "prettier", stop_after_first = true },
 		},

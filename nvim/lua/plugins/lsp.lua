@@ -71,7 +71,7 @@ return {
 			clangd = {},
 
 			-- Terraform
-			terraformls = {},
+			-- terraformls = {},
 
 			-- Bash
 			bashls = {},
@@ -118,7 +118,7 @@ return {
 			"stylua",
 			"prettierd", -- JS/TS/JSON/YAML formatter
 			"shfmt", -- Bash formatter
-			"tflint", -- Terraform linter
+			-- "tflint", -- Terraform linter
 		})
 
 		require("mason-tool-installer").setup({ ensure_installed = ensure_installed })
