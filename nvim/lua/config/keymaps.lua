@@ -10,6 +10,8 @@ vim.keymap.set("n", "<leader>lf", function()
 	})
 end, { desc = "Format current file" })
 
+vim.keymap.set("n", "<leader>cc", "<cmd>%y+<CR>", { desc = "Copy all content" })
+
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
 vim.keymap.set("n", "<C-u>", "<C-u>zz")
 vim.keymap.set("n", "n", "nzzzv")

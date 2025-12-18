@@ -22,6 +22,15 @@ return {
 				desc = "Copy filepath to system clipboard",
 			},
 		},
+		view_options = {
+			highlight_filename = function(entry, is_hidden, is_link_target, is_link_orphan)
+				local bufnr = vim.fn.bufnr(entry.name)
+				if bufnr ~= -1 and vim.bo[bufnr].modified then
+					return "WarningMsg"
+				end
+				return nil
+			end,
+		},
 	},
 	dependencies = { { "nvim-mini/mini.icons", opts = {} } },
 	lazy = false,
